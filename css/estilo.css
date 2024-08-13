@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fontes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'crimson-text';
+    src: url(../fontes/Crimson_Text/CrimsonText-SemiBoldItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'montserrat' ;
+}
+body{
+    background-color: white;
+    font-size: 60px;
+
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+} */
+.text-center{
+    text-align: center;
+}
+/* header start */
+.header{
+    background-color: #1B212E ;
+    height: 60px;
+    font-size: 14px;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    filter: none;
+    transition: .5s;
+}
+.header.rolagem{
+    background-color: #fd9c59;
+    z-index: 1;
+}
+header{
+    width: 100%;
+    padding: 20px 4%;
+}
+
+.link{
+    padding-left: 20px;
+    font-weight: 450;
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #91A3B0;
+}
+.logo2{
+    padding-right: 60px;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.logo{
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+.logo img{
+    width: 32px;
+    height: auto;
+}
+
+/* header end */
+/* main start */
+.main{
+    background-color: white;
+    flex-grow: 1;
+    width: 100vw;
+    height: auto;
+    font-size: 14px;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.home{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image:url(../img/darkhole-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    
+}
+.filter2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff10;
+    border: 2px solide #ffffff30;
+    backdrop-filter: blur(3px);
+
+
+
+}
+.informacoes-home{
+
+    font-size: 35px;
+    font-weight: bold;
+    color: #1B212E;
+}
+.name{
+    width: 466px;
+    font-family: 'crimson-text';
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+.name2{
+    width: 466px;
+
+    font-size: 12px;;
+    font-style: italic;
+}
+.text-1{
+    background: hsla(25, 98%, 67%, 1);
+
+    background: linear-gradient(360deg, hsla(25, 98%, 67%, 1) 0%, hsla(221, 26%, 14%, 1) 70%);
+    
+    background: -moz-linear-gradient(360deg, hsla(25, 98%, 67%, 1) 0%, hsla(221, 26%, 14%, 1) 70%);
+    
+    background: -webkit-linear-gradient(360deg, hsla(25, 98%, 67%, 1) 0%, hsla(221, 26%, 14%, 1) 70%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FD9C59", endColorstr="#1B212E", GradientType=1 );
+    
+    background-clip: text;
+    color: transparent;
+}
+#text::after{
+    content:'' ;
+    position: relative;
+    border-right: 4px solid #fd9c59;
+    animation: piscar 700ms linear infinite;
+}
+@keyframes piscar{
+    from{opacity: 0;}
+    to{
+        opacity: 1;
+
+    }
+}
+
+.bnt{
+    font-size: 16px;
+    font-family: montserrat;
+    color: 
+    #1a2425;
+    border: solid 2px #1a2425;
+    border-radius: 30px;
+    
+}
+.bnt:hover{
+    font-size: 16px;
+    
+    color: 
+    #1a2425;
+    border-radius: 30px;
+    background-color: #67807dc4;
+
+}
+.btn2{
+    padding: 10px;
+}
+.flex{
+    display:flex;
+    width: 350px;
+    justify-content:center;
+    
+
+}
+
+.sobre{
+    width:100vw;
+    height: auto;
+    background-color: #1B212E;
+    font-family: montserrat;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.filter3{
+    width:100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    background: #ffffff10;
+    border: 2px solide #ffffff30;
+    backdrop-filter: blur(3px);
+
+}
+.educacao{
+    padding-left: 30px;
+}
+.edu{
+    padding-left: 10px;
+    font-weight: bold;
+}
+.edu-2{
+    width: 199px;
+    height: 193px;
+    background-color: rgba(128, 128, 128, 0.344);
+    border-radius: 10px;
+      
+}
+.edu-data{
+    color: hsla(25, 98%, 67%, 1);
+}
+.edu-info{
+    color: #030713;
+}
+.sobre-name{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.sobre-name-box{
+    width: 550px;
+}
+.sobre-name i{
+    color: #fd9c59;
+}
+.line{
+    background-color: #fd9c59c4;
+    height: 2px;
+    margin-top: 0;
+}
+.sobre-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle img{
+    background-color: #ddd;
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;  
+
+}
+
+
+.fa-css3-alt{
+    font-size: 60px;
+}
+.fa-c{
+    font-size: 60px;
+}
+.fa-js{
+    font-size: 60px;
+}
+.fa-html5{
+    font-size: 60px;
+}
+.skill-page{
+    display: flex
+    ;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    
+}
+    .skill-page2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 700px;
+        height: 200px;
+        
+    }
+.skill{
+    padding-right: 30px;
+}
+.skill-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.skill-name{
+    padding-left: 10px;
+    font-weight: bolder;
+}
+.sobre-box{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    width: 80%;
+    height: auto;
+
+    background-color: white;
+    border-radius: 10px;
+}
+.sobre-name-2{
+    color: white;
+    padding-top: 30px;
+    font-size: 20px;
+    /* text-align: center; */
+    /* font-weight: bold; */
+    
+}
+.educacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.educacao-itens{
+    width: 700px;
+    height: auto;
+
+}
+.projetos-page{
+    background-color:#1B212E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    
+}
+.labirinto{
+    background-image:url(../img/Labirinto-projeto.jpg);
+    background-size: cover;
+    color: white;   
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+
+
+}
+.filter{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start
+    ;
+
+    background: #ffffff10;
+    border: 2px solide #ffffff30;
+    backdrop-filter: blur(3px);
+   
+}
+
+
+.projeto-item{
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start; */
+
+    width: 260px;
+
+
+    padding-left: 20px; 
+}
+
+.gerador{
+    background-image: url(../img/dica-senha-1200x640.jpg);
+    background-size: cover;
+    color: white;
+    
+    width: 500px;
+    height: 300px;
+}
+
+.contato{
+    background-color: blanchedalmond;
+
+    display: flex;
+}
+/* main end */
+.footer{
+    background-color: yellow;
+}
