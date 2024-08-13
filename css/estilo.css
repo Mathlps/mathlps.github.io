@@ -2,16 +2,19 @@
     font-family: 'montserrat';
     src: url(../fontes/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: 'crimson-text';
     src: url(../fontes/Crimson_Text/CrimsonText-SemiBoldItalic.ttf);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family:'montserrat' ;
+    font-family: 'montserrat';
 }
-body{
+
+body {
     background-color: white;
     font-size: 60px;
 
@@ -27,16 +30,17 @@ body{
   font-weight: 100;
   font-style: normal;
 } */
-.text-center{
+.text-center {
     text-align: center;
 }
+
 /* header start */
-.header{
-    background-color: #1B212E ;
+.header {
+    background-color: #1B212E;
     height: 60px;
     font-size: 14px;
     padding: 10px;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,58 +49,65 @@ body{
     filter: none;
     transition: .5s;
 }
-.header.rolagem{
+
+.header.rolagem {
     background-color: #fd9c59;
     z-index: 1;
 }
-header{
+
+header {
     width: 100%;
     padding: 20px 4%;
 }
 
-.link{
+.link {
     padding-left: 20px;
     font-weight: 450;
     text-decoration: none;
     color: white;
 }
-.link:hover{
+
+.link:hover {
     padding-left: 20px;
     text-decoration: none;
     color: #91A3B0;
 }
-.logo2{
+
+.logo2 {
     padding-right: 60px;
-    
+
     display: flex;
     justify-content: flex-end;
 }
-.logo{
+
+.logo {
     padding-left: 20px;
 
     display: flex;
     justify-content: flex-start;
 }
-.logo img{
+
+.logo img {
     width: 32px;
     height: auto;
 }
 
 /* header end */
 /* main start */
-.main{
+.main {
     background-color: white;
     flex-grow: 1;
     width: 100vw;
     height: auto;
     font-size: 14px;
-    
+
     display: flex;
     flex-direction: column;
 
 }
-.home{
-    
+
+.home {
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -104,12 +115,13 @@ header{
     justify-content: center;
     align-items: center;
 
-    background-image:url(../img/darkhole-background.jpg);
+    background-image: url(../img/darkhole-background.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    
+
 }
-.filter2{
+
+.filter2 {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -124,13 +136,15 @@ header{
 
 
 }
-.informacoes-home{
+
+.informacoes-home {
 
     font-size: 35px;
     font-weight: bold;
     color: #1B212E;
 }
-.name{
+
+.name {
     width: 466px;
     font-family: 'crimson-text';
     font-size: 20px;
@@ -138,190 +152,221 @@ header{
     font-weight: bold;
     font-style: italic;
 }
-.name2{
+
+.name2 {
     width: 466px;
 
-    font-size: 12px;;
+    font-size: 12px;
+    ;
     font-style: italic;
 }
-.text-1{
+
+.text-1 {
     background: hsla(25, 98%, 67%, 1);
 
     background: linear-gradient(360deg, hsla(25, 98%, 67%, 1) 0%, hsla(221, 26%, 14%, 1) 70%);
-    
+
     background: -moz-linear-gradient(360deg, hsla(25, 98%, 67%, 1) 0%, hsla(221, 26%, 14%, 1) 70%);
-    
+
     background: -webkit-linear-gradient(360deg, hsla(25, 98%, 67%, 1) 0%, hsla(221, 26%, 14%, 1) 70%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FD9C59", endColorstr="#1B212E", GradientType=1 );
-    
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FD9C59", endColorstr="#1B212E", GradientType=1);
+
     background-clip: text;
     color: transparent;
 }
-#text::after{
-    content:'' ;
+
+#text::after {
+    content: '';
     position: relative;
     border-right: 4px solid #fd9c59;
     animation: piscar 700ms linear infinite;
 }
-@keyframes piscar{
-    from{opacity: 0;}
-    to{
+
+@keyframes piscar {
+    from {
+        opacity: 0;
+    }
+
+    to {
         opacity: 1;
 
     }
 }
 
-.bnt{
+.bnt {
     font-size: 16px;
     font-family: montserrat;
-    color: 
-    #1a2425;
+    color:
+        #1a2425;
     border: solid 2px #1a2425;
     border-radius: 30px;
-    
+
 }
-.bnt:hover{
+
+.bnt:hover {
     font-size: 16px;
-    
-    color: 
-    #1a2425;
+
+    color:
+        #1a2425;
     border-radius: 30px;
     background-color: #67807dc4;
 
 }
-.btn2{
+
+.btn2 {
     padding: 10px;
 }
-.flex{
-    display:flex;
+
+.flex {
+    display: flex;
     width: 350px;
-    justify-content:center;
-    
+    justify-content: center;
+
 
 }
 
-.sobre{
-    width:100vw;
+.sobre {
+    width: 100vw;
     height: auto;
     background-color: #1B212E;
     font-family: montserrat;
     display: flex;
     flex-direction: column;
     color: white;
-    
+
 }
-.filter3{
-    width:100vw;
+
+.filter3 {
+    width: 100vw;
     height: auto;
 
     display: flex;
     flex-direction: column;
-    
-    
+
+
     background: #ffffff10;
     border: 2px solide #ffffff30;
     backdrop-filter: blur(3px);
 
 }
-.educacao{
+
+.educacao {
     padding-left: 30px;
 }
-.edu{
+
+.edu {
     padding-left: 10px;
     font-weight: bold;
 }
-.edu-2{
+
+.edu-2 {
     width: 199px;
     height: 193px;
     background-color: rgba(128, 128, 128, 0.344);
     border-radius: 10px;
-      
+
 }
-.edu-data{
+
+.edu-data {
     color: hsla(25, 98%, 67%, 1);
 }
-.edu-info{
+
+.edu-info {
     color: #030713;
 }
-.sobre-name{
+
+.sobre-name {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
-.sobre-name-box{
+
+.sobre-name-box {
     width: 550px;
 }
-.sobre-name i{
+
+.sobre-name i {
     color: #fd9c59;
 }
-.line{
+
+.line {
     background-color: #fd9c59c4;
     height: 2px;
     margin-top: 0;
 }
-.sobre-item{
+
+.sobre-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-.circle img{
+
+.circle img {
     background-color: #ddd;
     border-radius: 50%;
     height: 200px;
     object-fit: cover;
-    width: 200px;  
+    width: 200px;
 
 }
 
 
-.fa-css3-alt{
+.fa-css3-alt {
     font-size: 60px;
 }
-.fa-c{
+
+.fa-c {
     font-size: 60px;
 }
-.fa-js{
+
+.fa-js {
     font-size: 60px;
 }
-.fa-html5{
+
+.fa-html5 {
     font-size: 60px;
 }
-.skill-page{
-    display: flex
-    ;
+
+.skill-page {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 40px;
-    
+
 }
-    .skill-page2{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 700px;
-        height: 200px;
-        
-    }
-.skill{
+
+.skill-page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+    height: 200px;
+
+}
+
+.skill {
     padding-right: 30px;
 }
-.skill-box{
+
+.skill-box {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.skill-name{
+
+.skill-name {
     padding-left: 10px;
     font-weight: bolder;
 }
-.sobre-box{
+
+.sobre-box {
     display: flex;
     justify-content: center;
     max-width: 800px;
@@ -331,71 +376,77 @@ header{
     background-color: white;
     border-radius: 10px;
 }
-.sobre-name-2{
+
+.sobre-name-2 {
     color: white;
     padding-top: 30px;
     font-size: 20px;
     /* text-align: center; */
     /* font-weight: bold; */
-    
+
 }
-.educacao{
+
+.educacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 }
-.educacao-itens{
+
+.educacao-itens {
     width: 700px;
     height: auto;
 
 }
-.projetos-page{
-    background-color:#1B212E;
+
+.projetos-page {
+    background-color: #1B212E;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-.projetos{
+
+.projetos {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 600px;
     height: 400px;
-    
+
 }
-.labirinto{
-    background-image:url(../img/Labirinto-projeto.jpg);
+
+.labirinto {
+    background-image: url(../img/Labirinto-projeto.jpg);
     background-size: cover;
-    color: white;   
+    color: white;
     max-width: 500px;
     width: 100%;
     height: 300px;
 
 
 }
-.filter{
+
+.filter {
     width: 500px;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start
-    ;
+    align-items: flex-start;
 
     background: #ffffff10;
     border: 2px solide #ffffff30;
     backdrop-filter: blur(3px);
-   
+
 }
 
 
-.projeto-item{
-    
+.projeto-item {
+
     /* display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -404,24 +455,201 @@ header{
     width: 260px;
 
 
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
-.gerador{
+.gerador {
     background-image: url(../img/dica-senha-1200x640.jpg);
     background-size: cover;
     color: white;
-    
+
     width: 500px;
     height: 300px;
 }
+.filter4{
+    width: 100vw;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.contato{
-    background-color: blanchedalmond;
+
+    background: #ffffff10;
+    border: 2px solide #ffffff30;
+    backdrop-filter: blur(3px);
+}
+.contato {
+    background-color: #1B212E;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-box {
+    background-color: #1B212E;
+    width: 1000px;
+    height: 450px;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.filter5{
+    
+    width: 1000px;
+    height: 450px;
+    padding: 10px;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    background: #ffffff10;
+    border: 2px solide #ffffff30;
+    backdrop-filter: blur(3px);
+}
+
+.form {
+    width: 60%;
+    height: 100%;
+    background-color: #1B212E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius:20px 0 0 20px;
+}
+form h3{
+    text-align: center;
+    font-size: 30px;
+
+
+}
+form p{
+    text-align: center;
+    margin:20px 0;
+    font-size: medium;
+    font-style: italic;
+
+}
+input{
+    color: white;
+}
+.input-single{
+    position: relative;
+    margin: 20px 0;
+}
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.2s;
+}
+.imput{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid  #91A3B0;
+    background-color: #1B212E;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+}
+form .input-single .imput:focus ~ label,
+form .input-single .imput:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color:  #91A3B0;
+}
+
+.btn-3{
+    width: 100%;
+    text-align: center;
+}
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.contato-2 {
+    border-radius:0 20px 20px 0 ;
+    width: 60%;
+    height: 100%;
+    background-color: #fd9c59;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.contato-3 h3{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+.contato-3 i{
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.contato-3{
+    width: 450px;
+    height: 396.4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contato-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-end;
+    margin-top: 110px;
+}
+
+
+/* main end */
+.footer {
+    background-color: #1B212E;
+    color: white;
+    height: 60px;
+    font-size: 14px;
+    padding: 10px;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 0px 12px 0px rgba(252, 252, 252, 0.168);
+
+
+
 }
-/* main end */
-.footer{
-    background-color: yellow;
+.a {
+    text-decoration: none;
+    color: white;
+    }
+.a:hover{
+    color: #91A3B0 ;
+}
+.footer i {
+    padding-left: 10px;
+    font-size: 30px;
 }
