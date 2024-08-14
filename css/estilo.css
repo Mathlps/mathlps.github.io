@@ -19,7 +19,7 @@ html{
 
 body {
     background-color: white;
-    font-size: 60px;
+    font-size: 1rem;
 
     width: 100vw;
     height: auto;
@@ -115,7 +115,7 @@ padding-right: 40px;
     flex-wrap: wrap;
 
     background: #ffffff10;
-    border: 2px solide #ffffff30;
+    
     backdrop-filter: blur(3px);
 
 
@@ -213,7 +213,7 @@ padding-right: 40px;
 
 
 .sobre {
-    width: 100vw;
+    width: 100svw;
     height: auto;
     background-color: #1B212E;
     font-family: montserrat;
@@ -233,7 +233,7 @@ padding-right: 40px;
 
 
     background: #ffffff10;
-    border: 2px solide #ffffff30;
+    
     backdrop-filter: blur(3px);
 
 }
@@ -427,7 +427,7 @@ padding-right: 40px;
     align-items: flex-start;
 
     background: #ffffff10;
-    border: 2px solide #ffffff30;
+    
     backdrop-filter: blur(3px);
 
 }
@@ -465,7 +465,7 @@ padding-right: 40px;
 
 
     background: #ffffff10;
-    border: 2px solide #ffffff30;
+   
     backdrop-filter: blur(3px);
 }
 .contato {
@@ -498,7 +498,7 @@ padding-right: 40px;
     align-items: center;
     
     background: #ffffff10;
-    border: 2px solide #ffffff30;
+   
     backdrop-filter: blur(3px);
 }
 
@@ -814,7 +814,7 @@ form input[type=submit]{
         padding-left: 70px;
     }
     .contato-3{
-        width: 300px;
+        width: 100vw;
         height: auto;
     }
 
