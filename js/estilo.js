@@ -13,6 +13,6 @@ const el_text = document.querySelector("#text");
 })();
 
 window.addEventListener("scroll", function(){
-    let header= document.querySelector('#header-1')
+    let header= document.querySelector('#header')
     header.classList.toggle('rolagem',window.scrollY >0)
 })
